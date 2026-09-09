@@ -134,15 +134,3 @@ def test_imagetotext_tool_missing_file():
     result = tool.use("/path/to/non/existent/image.jpg")
     
     assert "не найден" in result or "ошибка" in result.lower()
-
-
-# Вспомогательная функция для объединения всех тестов
-def run_all_image_tests():
-    """Запускает все тесты для ImageToTextTool (для удобства)."""
-    print("Запуск всех тестов ImageToTextTool...")
-    test_imagetotext_from_url()
-    test_imagetotext_tool_direct()
-    test_imagetotext_tool_empty_image()
-    test_imagetotext_tool_invalid_file()
-    test_imagetotext_tool_missing_file()
-    print("Все тесты пройдены!")
