@@ -5,3 +5,5 @@ ddgs
 pytest
 pypdf
 pdfplumber
+Pillow
+pytesseract
